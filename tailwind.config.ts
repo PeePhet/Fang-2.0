@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     screens : {
         'ip12' : '390px' ,
-        'destop' : '1280px',
+        'destop' : '100px',
         '3xl' : '1680px'
     },
     extend: {

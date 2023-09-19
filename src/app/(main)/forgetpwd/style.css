@@ -13,3 +13,9 @@
 .btn-reset{
     box-shadow: 0px 4px 19px rgba(119, 147, 65, 30%);
 }
+
+.err{
+    border: 1px solid #d60e0e;
+    padding: 15px 20px;
+
+}

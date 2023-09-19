@@ -5,31 +5,29 @@
     border: 1px solid #ADADAD;
     padding: 15px 20px;
 }
+
+.input-field.error{
+    border: 1px solid #d60e0e;
+    padding: 15px 20px;
+
+}
+.input-field.valid{
+    border: 1px solid #09df09;
+    padding: 15px 20px;
+}
+
+
+
+
 .shadow-btn{
     box-shadow: 0px 4px 19px rgba(119,147,65,30%);
 }
 
-.radio-input {
-    position: relative;
-    opacity: 0;
-    z-index: 99;
-    cursor: pointer;
-}
 
-.checker {
-    position: absolute;
-    top: 4px;
-    left: -1px;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: #ECECEC; /* สีเริ่มต้น */
-}
 
-.radio-input:checked + .checker {
-    background-color: azure; /* สีเมื่อถูกเลือก */
-}
+
 
 .bgbtn-reset{
     box-shadow: 0px 4px 19px rgba(119, 147, 65, 30%);
 }
+
