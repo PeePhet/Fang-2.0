@@ -3,8 +3,15 @@ import Image from "next/image";
 import { Poppins , Inter } from "next/font/google";
 import QuizComponent from "./QuizComponent";
 import Navbarofquiz from "@/app/components/Navbarofquiz";
+import QuizHeader from "./QuizHeader";
+import QuizContent from "./QuizContent";
+import QuizList from "./QuizList";
+import QuizChiose from "./QuizChiose";
+import QuizcoverHead from "./QuizcoverHead";
+import QuizBtnNext from "./QuizBtnNext";
 export const poppins = Poppins({ weight: "700", subsets: ["latin"] });
 export const inter = Inter({weight  : '700' , subsets: ['latin'] })
+
 
 
 type Props = {};
@@ -116,7 +123,7 @@ export default function page({}: Props) {
                 </ul>
               </div>
             <hr  className="w-full mb-5"/> 
-            <div className="w-full px-[108px] h-[481px]">
+            <div className="w-full px-[108px] h-[500px]">
               <h4 className="text-center  text-[16px] font-bold text-[#2F327D]">Chapter 1 Quiz </h4>
               <h5 className="text-center text-[16px] font-bold text-[#2F327D]"> Quiz 1/5</h5>
               <div className="flex flex-col mt-[44px] w-[836px] h-[534px] gap-y-[36px]" >
@@ -142,7 +149,48 @@ export default function page({}: Props) {
             <button type="button" className="self-end mr-[56px] mb-[20px] w-[147px] h-[37px] rounded-[14px] border-[#F48C06] border-[1px] text-center text-[#F48C06] text-[14px]"> Next</button>
           </div>
         </div>
-        <QuizComponent/>
+        <QuizComponent  unit={"บทที่ 2"} detail={"Introduction to Machine Learning"} Chapter={"Chapter 2 Quiz"}>
+        <QuizcoverHead>
+          <QuizHeader>Objectives : </QuizHeader>
+          <QuizContent>
+              <QuizList>Definition of machine learning and its applications. </QuizList>
+              <QuizList> Understanding supervised, unsupervised, and reinforcement learning.</QuizList>
+              <QuizList> The role of data in machine learning.</QuizList>
+          </QuizContent>
+          <QuizHeader> Recommended Resources: </QuizHeader>
+          <QuizContent>
+              <QuizList>Machine Learning by Stanford University (Coursera) - Provides a solid foundation in machine learning concepts by Andrew Ng. </QuizList>
+              <QuizList>Machine Learning Mastery - Offers tutorials and practical tips on machine learning techniques.</QuizList>
+          </QuizContent>
+        </QuizcoverHead>
+             <hr  className="w-full mb-5 mt-5"/> 
+        <QuizChiose  title={"Chapter 1 Quiz"} numberQuiz={"Quiz 1/5"} />
+     
+       
+        
+      </QuizComponent>
+        
+        <QuizComponent unit="บทที่ 3" detail="Introduction to Machine Learning" Chapter={"Chapter 3 Quiz"}>
+        <QuizcoverHead>
+          <QuizHeader>Objectives : </QuizHeader>
+          <QuizContent>
+              <QuizList>Definition of machine learning and its applications. </QuizList>
+              <QuizList> Understanding supervised, unsupervised, and reinforcement learning.</QuizList>
+              <QuizList> The role of data in machine learning.</QuizList>
+          </QuizContent>
+          <QuizHeader> Recommended Resources: </QuizHeader>
+          <QuizContent>
+              <QuizList>Machine Learning by Stanford University (Coursera) - Provides a solid foundation in machine learning concepts by Andrew Ng. </QuizList>
+              <QuizList>Machine Learning Mastery - Offers tutorials and practical tips on machine learning techniques.</QuizList>
+          </QuizContent>
+        </QuizcoverHead>
+             <hr  className="w-full mb-5 mt-5"/> 
+        <QuizChiose  title={"Chapter 1 Quiz"} numberQuiz={"Quiz 1/5"} />
+        
+        
+       
+
+        </QuizComponent>
         
       
       </section>
